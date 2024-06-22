@@ -60,7 +60,7 @@ public class WebSecurityConfiguration  {
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .maximumSessions(1)
-                .expiredUrl("/session-expired"); // Configures session management to be stateless.
+                .expiredUrl("/api/session-expired"); // Configures session management to be stateless.
         http.authenticationProvider(authenticationProvider());
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
         return http.build(); // Builds and returns the SecurityFilterChain.

@@ -12,7 +12,7 @@ public class EmployeeData {
     public static List<EmployeeDto> getPets() {
         return Stream.of(EmployeeDto.builder().name("praveen").build(),
                 EmployeeDto.builder().name("kamal").build(),
-                EmployeeDto.builder().name("kamal2").build(),
-                EmployeeDto.builder().name("kamal3").build()).collect(Collectors.toList());
+                EmployeeDto.builder().name("muthu").build(),
+                EmployeeDto.builder().name("google").build()).collect(Collectors.toList());
     }
 }
