@@ -11,8 +11,8 @@ import java.util.List;
 @RequestMapping("/api")
 public class EmployeeController {
 
-    @GetMapping("/pet")
-    public List<EmployeeDto> retrievePets() {
+    @GetMapping("/employee")
+    public List<EmployeeDto> getAllEmployee() {
         return EmployeeData.getPets();
     }
 }
